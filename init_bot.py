@@ -32,7 +32,7 @@ bot = telebot.TeleBot(api_key)
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-	bot.send_message(message.chat.id, 'Hello @' + str(message.chat.username) +'!!!\nI can make a photo with a code from your code.\nWrite /help to find out all the commands\n\nProject is open source')
+	bot.send_message(message.chat.id, 'Hello @' + str(message.chat.username) +'!!!\nI can make a photo with a code from your code.\nWrite /help to find out all the commands\n\nLicense: AGPL-3.0 https://github.com/drogi17/codephoto_bot')
 	db_log(message)
 
 @bot.message_handler(commands=['help'])
