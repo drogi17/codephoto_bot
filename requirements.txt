@@ -1,4 +1,3 @@
 pygments
 gunicorn
 telebot
-sqlite3
