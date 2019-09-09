@@ -19,7 +19,7 @@ def get_random_bg():
     return random.choice(glob.glob("templates/pycharm/*.jpg"))
 
 def db_log(message):
-	print('Sended to @' + str(message.chat.username) + '; id = ' + str(message.chat.id) + '; text = ' + str(message.text))
+	print('Sent to @' + str(message.chat.username) + '; id = ' + str(message.chat.id) + '; text = ' + str(message.text))
 	conn = sqlite3.connect("data_baz.sqlite")
 	cursor = conn.cursor()
 	cursor.execute('insert into messages(id, text, name) VALUES ( "' + str(message.chat.id) + '", "' + err(str(message.text)) + '", "@' + err(str(message.chat.username)) + '");')
