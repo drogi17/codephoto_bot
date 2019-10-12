@@ -1,3 +1,2 @@
-pygments
-gunicorn
-telebot
+Pillow
+flask
